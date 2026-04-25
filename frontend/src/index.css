@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================= */
+/* 🌿 GLOBAL THEME */
+/* ============================= */
+
+:root {
+  --bg-main: #0E1A14;
+  --bg-card: #13241C;
+  --bg-soft: #152A21;
+
+  --border: #1F3A2F;
+
+  --text-main: #E8F5E9;
+  --text-subtle: #9FB7A7;
+
+  --primary: #6B8E23;
+  --primary-hover: #7FAE3A;
+
+  --risk-high: #FF4D4D;
+  --risk-low: #8BC34A;
+
+  --accent-green: #4CAF50;
+  --accent-brown: #5C4033;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ============================= */
+/* SCROLLBAR (PREMIUM TOUCH) */
+/* ============================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F3A2F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2E5A45;
+}
+
+/* ============================= */
+/* SELECTION */
+/* ============================= */
+
+::selection {
+  background: #6B8E23;
+  color: white;
+}
+
+/* ============================= */
+/* SMOOTH UI */
+/* ============================= */
+
+* {
+  transition: all 0.2s ease;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
